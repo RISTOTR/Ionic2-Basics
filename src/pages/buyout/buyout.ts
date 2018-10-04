@@ -1,20 +1,20 @@
-import { Component, OnInit } from '@angular/core';
-import { NavController } from 'ionic-angular/navigation/nav-controller';
-import { NavParams } from 'ionic-angular/navigation/nav-params';
+import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+import { NavParams } from 'ionic-angular';
 
 @Component({
     selector: 'page-biuout',
     templateUrl: 'buyout.html'
 })
 
-export class BuyoutPage implements OnInit {
-    product: string;
+export class BuyoutPage {
+    productData: {name:string, quantity: number};
 
     constructor (private navParams: NavParams,
         private navCtrl: NavController) {}
 
         ngOnInit() {
-            this.product = this.navParams.get('productName');
+            this.productData = this.navParams.data;
         }
 
         onGoBuy() {

@@ -5,8 +5,8 @@
 </ion-header>
 
 <ion-content>
-    <p>
-       {{ product }} 
-    </p>
+    <h2>Your order:</h2>
+    <p>name: {{ productData.name }}</p>
+    <p>quantity: {{ productData.quantity}}</p>
     <button ion-button (click)= "onGoBuy()">Buy</button>
 </ion-content>

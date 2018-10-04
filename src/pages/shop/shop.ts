@@ -15,7 +15,7 @@ export class ShopPage {
         this.navCtrl.push(BuyoutPage);
       }
 
-      onLoadProduct(product: string) {
-        this.navCtrl.push(BuyoutPage, {productName: product});
+      onLoadProduct(productData: {name: string, quantity: number}) {
+        this.navCtrl.push(BuyoutPage, productData);
        }
 }

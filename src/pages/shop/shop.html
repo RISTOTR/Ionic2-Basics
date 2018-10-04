@@ -5,10 +5,11 @@
 </ion-header>
 
 <ion-content padding>
-    <button ion-button (click)="onGoToBuyout()">Buyout</button>
+  <!-- <button ion-button (click)="onGoToBuyout()">Buyout</button>-->
+  <button ion-button (click)= "onLoadProduct({name: 'milk', quantity: '2'})">Milk</button>
     <hr>
-    <button ion-button (click)= "onLoadProduct('Milk')">Milk</button>
+    <button ion-button (click)= "onLoadProduct({name:'Apples', quantity: '10'})">Milk</button>
 <hr>
-<button ion-button (click)= "onLoadProduct('Eggs')">Eggs</button>
+<button ion-button (click)= "onLoadProduct({name:'Eggs', quantity: '12'})">Eggs</button>
 <hr>
 </ion-content>
