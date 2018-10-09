@@ -37,7 +37,7 @@ ionViewCanLeave(): boolean | Promise<void> {
       resolve()
     }, 1000);
   });
-  return promise
+  return promise;
 }
 
 }
